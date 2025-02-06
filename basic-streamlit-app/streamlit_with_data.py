@@ -20,6 +20,7 @@ df = pd.DataFrame({
 st.write("Here's a simple table:")
 st.dataframe(df)
 
+
 # ================================
 # Step 2: Adding User Interaction with Widgets
 # ================================
@@ -41,21 +42,28 @@ st.dataframe(filtered_df)
 
 # Now, instead of creating a DataFrame manually, we load a CSV file
 # This teaches students how to work with external data in Streamlit
-df = pd.read_csv("data/sample_data.csv")  # Ensure the "data" folder exists with the CSV file
+df2 = pd.read_csv("data/sample_data.csv")  
+# Ensure the "data" folder exists with the CSV file
 # Display the imported dataset
 st.write("Here's the dataset loaded from a CSV file:")
-st.dataframe(df)
+st.dataframe(df2)
 
 # Using a selectbox to allow users to filter data by city
 # Students learn how to use widgets in Streamlit for interactivity
-city = st.selectbox("Select a city", df["City"].unique())
+salary = st.slider("Choose a salary range:", 
+                   min_value = df2["Salary"].min(),
+                   max_value = df2["Salary"].max())
+st.write(f"Salries under {salary}:")
+st.dataframe(df2[df2['Salary'] <= salary])
+
+city = st.selectbox("Select a city", df2["City"].unique())
 
 # Filtering the DataFrame based on user selection
-filtered_df = df[df["City"] == city]
+filtered_df2 = df2[df2["City"] == city]
 
 # Display the filtered results
 st.write(f"People in {city}:")
-st.dataframe(filtered_df)
+st.dataframe(filtered_df2)
 
 # ================================
 # Summary of Learning Progression:

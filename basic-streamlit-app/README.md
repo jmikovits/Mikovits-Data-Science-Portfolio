@@ -8,7 +8,7 @@ Python must be installed with the required packages using: pip install streamlit
 
 ### Run the App:
 
-streamlit run main.py
+In your terminal, type: streamlit run main.py
 
 ### Explore Features:
 

@@ -1,5 +1,5 @@
 # Mikovits-Data-Science-Portfolio
-Welcome to my Data Science Portfolio showcasing data science projects and skills! This repository is a collection of data science projects and examples of my work, showcasing my skills in exploratory data analysis (EDA), data visualization, modeling, and machine learning.
+Welcome to my Data Science Portfolio showcasing data science projects and skills! This repository is a collection of data science projects and examples of my work and in-class learning, showcasing my skills in exploratory data analysis (EDA), data visualization, modeling, and machine learning.
 
 ---
 

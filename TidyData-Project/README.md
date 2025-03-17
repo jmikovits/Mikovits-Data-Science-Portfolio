@@ -32,7 +32,9 @@
 Python must be installed with the following required packages:  
 
 ```bash
-pip install pandas numpy matplotlib seaborn jupyter
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 

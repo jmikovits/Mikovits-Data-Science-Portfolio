@@ -35,10 +35,12 @@ This portfolio is going to be organized into the folders based on their category
 
 6. **Tidy Data Project**
       [[Link to Tidy Data Repository](https://github.com/jmikovits/Mikovits-Data-Science-Portfolio/blob/main/TidyData-Project/TidyData_Project.ipynb)]
-      
-    Project Description:
-    This project focuses on the concept of tidy data, a foundational principle in data science for structuring datasets to optimize analysis and manipulation. In this project, I applied the principles outlined by Hadley Wickham to transform a messy dataset into a tidy       format. Using Python and Pandas, I performed essential data cleaning tasks, including:
-     - **Handling missing values** 
-     - **Standardizing column names** 
-     - **Reshaping and organizing the dataset into a format suitable for analysis**
-    This project highlights my expertise in data cleaning, a critical skill for any data science role. By transforming raw data into a structured and analyzable format, I demonstrated my ability to prepare datasets for further analysis, visualization, and machine            learning applications. Additionally, my use of Python and Pandas illustrates my proficiency with key tools widely utilized in the data science field.
+   #### Overview
+   In this project, I focused on the concept of **tidy data**, a core technique in data science that enhances the organization and analysis of datasets. I applied the principles of **tidy data** as outlined by Hadley Wickham to clean and restructure a messy dataset. By     utilizing **Python** and **Pandas**, I performed key data wrangling tasks such as:
+   - Handling missing values
+   - Standardizing column names
+   - Reshaping and organizing the dataset into a format suitable for analysis
+   #### Project Significance
+   This project serves as a crucial component of my portfolio, showcasing my proficiency in essential data cleaning and preparation techniques. The ability to transform raw data into a structured, analyzable format is a critical skill for data science roles,                particularly in data analysis, visualization, and machine learning workflows. The use of **Python** and **Pandas** highlights my capability with industry-standard tools that are integral to data science practices.
+   The Tidy Data project demonstrates my foundational expertise in working with data and data cleaning, complementing other portfolio projects that involve data analysis, machine learning, and visualization. It underscores my commitment to building a solid foundation in    data science through practical, real-world applications of data preparation and structuring techniques.
+

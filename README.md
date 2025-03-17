@@ -27,7 +27,12 @@ This portfolio is going to be organized into the folders based on their category
 
    ---
 
-5. **Tidy Data Project**
+5. **Weekly In-Class Coding Work**
+   A collection of notebooks showcasing various topics I've learned and applied in class, and demonstrated mastery of through completed projects.
+
+   ---
+
+7. **Tidy Data Project**
       [[Link to Tidy Data Repository](https://github.com/jmikovits/TidyData-Project)]
       
       Project Description: 

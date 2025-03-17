@@ -17,6 +17,9 @@
 #### ✅ Some sports are gender-exclusive (e.g., rhythmic gymnastics for women, greco-roman wrestling for men).
 #### ✅ Basketball and Water Polo have nearly equal medal distributions between male and female athletes.
 
+### Example Visualization
+![image](https://github.com/user-attachments/assets/c5321544-616e-4894-9227-2319b97c3c7a)
+
 ### 📚 References
 <summary>
 <a href="https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf"><strong>📖 Pandas Cheat Sheet 

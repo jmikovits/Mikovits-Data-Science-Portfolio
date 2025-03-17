@@ -18,3 +18,20 @@ This portfolio is going to be organized into the folders based on their category
 
 4. **Notebooks**  
    Jupyter notebooks that showcase step-by-step processes for solving specific data problems.
+
+5. **Tidy Data Project**
+     # Tidy Data Project [Link to Tidy Data Repository](https://github.com/jmikovits/TidyData-Project)
+      ---
+      ## Project Description
+      This project focuses on the concept of "tidy data," a critical technique in data science for structuring datasets to make them easier to analyze and manipulate. In this project, I cleaned and organized a messy dataset into a tidy format following the principles          outlined by Hadley Wickham. I used Python and Pandas to accomplish this, including handling missing values, standardizing column names, and transforming data into a usable structure for analysis.
+
+      ---
+
+      ## How This Project Complements My Portfolio
+      This project is an essential addition to my portfolio because it demonstrates my understanding of fundamental data cleaning techniques, which are crucial for any data science role. By transforming raw data into a structured format, I applied key data wrangling           skills that are directly transferable to any project involving data analysis, visualization, or machine learning. The use of Python and Pandas also showcases my proficiency with one of the most widely used data science tools.
+
+      ---
+
+      ## Portfolio Update
+      I have added this Tidy Data project to my portfolio to showcase my ability to handle real-world data problems. The clean, structured dataset produced in this project would be a foundational step for any future analysis. This project complements my other coding           work by demonstrating my ability to work with data in its rawest form and prepare it for analysis.
+

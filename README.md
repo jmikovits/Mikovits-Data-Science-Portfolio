@@ -3,7 +3,7 @@ Welcome to my Data Science Portfolio showcasing data science projects and skills
 
 ---
 
-## Repository Structure
+# Repository Structure
 
 This portfolio is going to be organized into the folders based on their category. For example:
 

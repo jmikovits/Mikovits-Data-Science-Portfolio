@@ -1,6 +1,6 @@
-# Tidy Data Project: Olympic Medalists Analysis  
+# Tidy Data Project: 2008 Olympic Medalists Analysis  
 
-### This repository contains an interactive Jupyter Notebook designed to clean, transform, and analyze an Olympic medalist dataset following **tidy data principles**. The project ensures that each variable is stored in a column, each observation in a row, and each observational unit in a separate table. The cleaned dataset is then used for aggregation, visualization, and statistical analysis.  
+### This repository contains a Jupyter Notebook designed to clean, transform, and analyze an Olympic medalist dataset following **tidy data principles**. The project ensures that each variable is stored in a column, each observation in a row, and each observational unit in a separate table. The cleaned dataset is then used for aggregation, visualization, and statistical analysis.  
 
 ### 📊 Dataset Description
 #### The dataset contains Olympic medalist data across multiple sports. Originally, it was in wide format, where each sport and gender had separate columns for medals. The dataset required cleaning and restructuring to align with tidy data principles.

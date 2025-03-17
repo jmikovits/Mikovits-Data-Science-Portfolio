@@ -41,6 +41,7 @@ This portfolio is going to be organized into the folders based on their category
    - Standardizing column names
    - Reshaping and organizing the dataset into a format suitable for analysis
    #### Project Significance
-   This project serves as a crucial component of my portfolio, showcasing my proficiency in essential data cleaning and preparation techniques. The ability to transform raw data into a structured, analyzable format is a critical skill for data science roles,                particularly in data analysis, visualization, and machine learning workflows. The use of **Python** and **Pandas** highlights my capability with industry-standard tools that are integral to data science practices.
-   The Tidy Data project demonstrates my foundational expertise in working with data and data cleaning, complementing other portfolio projects that involve data analysis, machine learning, and visualization. It underscores my commitment to building a solid foundation in    data science through practical, real-world applications of data preparation and structuring techniques.
+   This project serves as an important component of my portfolio, showcasing my proficiency in data cleaning and preparation techniques. The ability to transform raw data into a structured, analyzable format is a critical skill for data science roles,                 particularly in data analysis, visualization, and machine learning workflows. The use of **Python** and **Pandas** highlights my capability with industry-standard tools that are integral to data science practices.
+   The Tidy Data project demonstrates my functional expertise in working with data and data cleaning, complementing other portfolio projects that involve data analysis and visualization. It underscores my commitment to building a solid foundation in data science 
+   through practical, real-world applications of data preparation and structuring techniques.
 

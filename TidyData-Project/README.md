@@ -3,7 +3,7 @@
 ### This repository contains a Jupyter Notebook designed to clean, transform, and analyze an Olympic medalist dataset following **tidy data principles**. The project ensures that each variable is stored in a column, each observation in a row, and each observational unit in a separate table. The cleaned dataset is then able to be used for aggregation, visualization, and statistical analysis.  
 
 ### 📊 Dataset Description
-#### The dataset contains Olympic medalist data across multiple sports. Originally, it was in wide format, where each sport and gender had separate columns for medals. The dataset required cleaning and restructuring to align with tidy data principles.
+#### The dataset contains 2008 Olympic medalist data across multiple sports. Originally, it was in wide format, where each sport and gender had separate columns for medals. The dataset required cleaning and restructuring to align with tidy data principles.
 
 ### 🔄 Data Cleaning & Transformation
 #### Reshaped Data: Used pd.melt() to convert wide-format columns into a long-format dataset.
@@ -13,9 +13,12 @@
 #### Generated Visualizations: Used matplotlib and seaborn to create bar charts and heatmaps for insights.
 
 ### 📌 Key Findings
-#### ✅ Athletics and Swimming have the highest number of medals awarded across both genders.
+#### ✅ Athletics, Swimming, and Rowing have the highest number of medals awarded across both genders.
 #### ✅ Some sports are gender-exclusive (e.g., rhythmic gymnastics for women, greco-roman wrestling for men).
-#### ✅ Basketball and Water Polo have nearly equal medal distributions between male and female athletes.
+#### ✅ Basketball and Water Polo have nearly equal medal distributions between male and female athletes, which makes sense considering they are team events.
+
+### Example Visualization
+![image](https://github.com/user-attachments/assets/c5321544-616e-4894-9227-2319b97c3c7a)
 
 ### 📚 References
 <summary>

@@ -28,7 +28,7 @@ This portfolio is going to be organized into the folders based on their category
    ---
 
 5. **Tidy Data Project**
-      Tidy Data Project [[Link to Tidy Data Repository](https://github.com/jmikovits/TidyData-Project)]
+      [[Link to Tidy Data Repository](https://github.com/jmikovits/TidyData-Project)]
       
       Project Description: 
       This project focuses on the concept of "tidy data," a critical technique in data science for structuring datasets to make them easier to analyze and manipulate. In this project, I cleaned and organized a messy dataset into a tidy format following the principles          outlined by Hadley Wickham. I used Python and Pandas to accomplish this, including handling missing values, standardizing column names, and transforming data into a usable structure for analysis.

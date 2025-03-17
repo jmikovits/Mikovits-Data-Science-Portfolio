@@ -18,13 +18,10 @@
 #### ✅ Basketball and Water Polo have nearly equal medal distributions between male and female athletes.
 
 ### 📚 References
-<details><summary>
+<summary>
 <a href="https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf"><strong>📖 Pandas Cheat Sheet 
+<a href="https://vita.had.co.nz/papers/tidy-data.pdf"><strong>📖 Tidy Data Principles by Hadley Wickham
 </summary>
-<ul>
-  <li><a href="https://vita.had.co.nz/papers/tidy-data.pdf"><strong>📖 Tidy Data Principles by Hadley Wickham
-</ul>
-</details>  
 
 ---
 

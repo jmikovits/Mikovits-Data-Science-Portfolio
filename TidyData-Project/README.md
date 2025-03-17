@@ -19,8 +19,8 @@
 
 ### 📚 References
 <summary>
-<a href="https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf"><strong>📖 Pandas Cheat Sheet 
-<a href="https://vita.had.co.nz/papers/tidy-data.pdf"><strong>📖 Tidy Data Principles by Hadley Wickham
+#### <a href="https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf"><strong>📖 Pandas Cheat Sheet 
+#### <a href="https://vita.had.co.nz/papers/tidy-data.pdf"><strong>📖 Tidy Data Principles by Hadley Wickham
 </summary>
 
 ---

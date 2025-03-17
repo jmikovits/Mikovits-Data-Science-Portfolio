@@ -22,17 +22,18 @@ This portfolio is going to be organized into the folders based on their category
 
    ---
 
-4. **Notebooks**  
+4. **Notebooks**
+     
    Jupyter notebooks that showcase step-by-step processes for solving specific data problems.
 
    ---
 
-5. **Weekly In-Class Coding Work**
-   A collection of notebooks showcasing various topics I've learned and applied in class, and demonstrated mastery of through completed projects.
+5. **Weekly In-Class Coding Work**  
+   A collection of notebooks showcasing various topics I've learned and applied in class, with demonstrated mastery through the completed projects.
 
    ---
 
-7. **Tidy Data Project**
+6. **Tidy Data Project**
       [[Link to Tidy Data Repository](https://github.com/jmikovits/TidyData-Project)]
       
       Project Description: 

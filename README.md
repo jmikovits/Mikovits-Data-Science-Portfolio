@@ -11,23 +11,20 @@ This portfolio is going to be organized into the folders based on their category
    This folder will contain projects focused on understanding data, identifying trends, and uncovering insights.
 
    ---
-
-2. **Visualizations**  
-   Will contain data visualizations and dashboards created using tools like Streamlit, Matplotlib, Seaborn, and Plotly.
-
-   ---
-
-3. **Models**  
-   Will include work related to machine learning models, feature engineering experiments, and model evaluations.
+2. **Basic Streamlit App**  
+     #### Overview
+     In this project, I created a basic Streamlit app that performs some Exploratory data Analysis on the Palmer's Penguins dataset. The app allows users to filter and visualize data about different penguin species, providing insights into their characteristics like flipper length.
+     #### Project Significance
+     This project is meaningful because it is the starting point of my Data Science Portfolio. As seen later, I have built more complex Streamlit apps, but this app served as a foundation for creating interactive apps that others can use.
 
    ---
 
-4. **Weekly In-Class Coding Work**  
+3. **Weekly In-Class Coding Work**  
    A collection of notebooks showcasing various topics I've learned and applied in class, with demonstrated mastery through the completed projects.
 
    ---
 
-5. **Tidy Data Project**
+4. **Tidy Data Project**
       [[Link to Tidy Data Repository](https://github.com/jmikovits/Mikovits-Data-Science-Portfolio/blob/main/TidyData-Project/TidyData_Project.ipynb)]
    #### Overview
    In this project, I focused on the concept of **tidy data**, a core technique in data science that enhances the organization and analysis of datasets. I applied the principles of **tidy data** as outlined by Hadley Wickham to clean and restructure a messy dataset. By     utilizing **Python** and **Pandas**, I performed key data wrangling tasks such as:
@@ -41,10 +38,10 @@ This portfolio is going to be organized into the folders based on their category
    
    ---
 
-6. **Machine Learning Streamlit App**
+5. **Machine Learning Streamlit App**
      [[Link to ML-App Repository](https://github.com/jmikovits/Mikovits-Data-Science-Portfolio/tree/main/MLStreamlitApp)]
    #### Overview
-   In this project, I created a Streamlit App that allows users to upload a dataset of their choice and experiment with different machine learning techniques. The machine learning techniques included in this app are Linear Regression, K-Nearest Neighbors, and Decision      trees. With this app you can:
+   In this project, I created a Streamlit App that allows users to upload a dataset of their choice and experiment with different machine learning techniques. The machine learning techniques included in this app are Linear Regression, K-Nearest Neighbors, and Decision      Trees. With this app you can:
    - Upload a dataset, then view and filter data within the dataset.
    - Apply Machine Learning techniques such as Linear Regression, K-Nearest Neighbors, and Decision Trees to the dataset.
    - Compare model accuracy on scaled vs. unscaled data.

@@ -13,12 +13,12 @@ This project is an interactive Machine Learning App that enables users to upload
 2. **Install Required Libraries:**
    ```bash
    pip install -r requirements.txt
-   streamlit==1.12.0 
-   pandas==1.5.0
-   numpy==1.21.0
-   seaborn==0.11.0
-   matplotlib==3.5.1
-   scikit-learn==1.1.3
+   matplotlib==3.10.1
+   numpy==2.2.4
+   pandas==2.2.3
+   scikit_learn==1.6.1
+   seaborn==0.13.2
+   streamlit==1.37.1
    streamlit-option-menu==0.3.0
 3. **Run the App:**
   ```bash
@@ -58,13 +58,14 @@ This app is also deployed online. Please visit here to access it: [ML-App](https
 Below are some example screenshots of the app’s key functionalities:
 
 - **Dataset Summary:**  
-  ![Dataset Summary Screenshot](![image](https://github.com/user-attachments/assets/61467123-736b-4ab9-9fd3-730018c603b9))
+  ![Dataset Summary Screenshot](https://github.com/user-attachments/assets/61467123-736b-4ab9-9fd3-730018c603b9)
   
 - **Linear Regression Output:**  
-  ![Linear Regression Screenshot](![image](https://github.com/user-attachments/assets/56fad4ff-24fa-4941-a413-c6863fc67089))
+  ![Linear Regression Screenshot](https://github.com/user-attachments/assets/56fad4ff-24fa-4941-a413-c6863fc67089)
   
 - **K-Nearest Neighbors Visualization:**  
-  ![KNN Output Screenshot](![image](https://github.com/user-attachments/assets/223b822c-8c27-4546-bd93-acb9683591c9))
+  ![KNN Output Screenshot](https://github.com/user-attachments/assets/223b822c-8c27-4546-bd93-acb9683591c9)
   
 - **Decision Tree Classification Metrics:**  
-  ![Decision Tree Classification Screenshot](![image](https://github.com/user-attachments/assets/03e3cc2c-47bf-415c-b75d-56560d6254f8))
+  ![Decision Tree Classification Screenshot](https://github.com/user-attachments/assets/03e3cc2c-47bf-415c-b75d-56560d6254f8)
+

@@ -11,9 +11,8 @@ This repository contains a Jupyter Notebook designed to clean, transform, and an
    git clone https://github.com/jmikovits/TidyData-Project.git
    cd TidyData-Project
 2. **Open a terminal or command prompt and navigate to the project folder.**
-3. **Install Required Dependencies/Libraries:**
+3. **Install or Import Required Dependencies/Libraries:**
    ```bash
-   pip install -r requirements.txt
    import pandas as pd
    import matplotlib.pyplot as plt
    import seaborn as sns

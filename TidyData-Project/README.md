@@ -50,10 +50,13 @@ This repository contains a Jupyter Notebook designed to clean, transform, and an
 - [Tidy Data Principles by Hadley Wickham](https://vita.had.co.nz/papers/tidy-data.pdf)
 
 
-### Visual Example
-Below is an example screenshot of the Notebook's utilization of Tidy Data:
-**Heatmap:**  
+### Visual Examples
+Below are example screenshots of the Notebook's utilization and productions of Tidy Data:
+- **Tidied Data:**  
+  ![image](https://github.com/user-attachments/assets/21d6a1a4-d7d4-4373-a32d-c367e64d7b93)
+- **Heatmap:**  
   ![image](https://github.com/user-attachments/assets/c5321544-616e-4894-9227-2319b97c3c7a)
+
   
 
 

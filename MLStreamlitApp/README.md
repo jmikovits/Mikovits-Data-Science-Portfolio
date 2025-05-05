@@ -9,7 +9,7 @@ This project is an interactive Machine Learning App that enables users to upload
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/jmikovits/MLStreamlitApp.git
-   cd ML-App.py
+   cd MLStreamlitApp
 2. **Install Required Libraries:**
    ```bash
    pip install -r requirements.txt
@@ -22,7 +22,7 @@ This project is an interactive Machine Learning App that enables users to upload
    streamlit-option-menu==0.3.0
 3. **Run the App:**
   ```bash
-    streamlit run app.py
+    streamlit run ML-App.py
 ```
 4. **Access the App:**
    ***Open your browser and navigate to the URL provided in your terminal (usually http://localhost:8501).***

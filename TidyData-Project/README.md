@@ -9,7 +9,7 @@ This repository contains a Jupyter Notebook designed to clean, transform, and an
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/jmikovits/TidyData-Project.git
-   cd TidyData-Project.ipynb
+   cd TidyData-Project
 2. **Open a terminal or command prompt and navigate to the project folder.**
 3. **Install Required Dependencies/Libraries:**
    ```bash

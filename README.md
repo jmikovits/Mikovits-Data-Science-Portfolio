@@ -41,7 +41,7 @@ This portfolio is going to be organized into the folders based on their category
 5. **Machine Learning Streamlit App**
      [[Link to ML-App Repository](https://github.com/jmikovits/Mikovits-Data-Science-Portfolio/tree/main/MLStreamlitApp)]
    #### Overview
-   In this project, I created a Streamlit App that allows users to upload a dataset of their choice and experiment with different machine learning techniques. The machine learning techniques included in this app are Linear Regression, K-Nearest Neighbors, and Decision      Trees. With this app you can:
+   In this project, I created a Streamlit App that allows users to upload a dataset of their choice and experiment with different machine learning techniques. The machine learning techniques included in this app are **Linear Regression**, **K-Nearest Neighbors**, and **Decision Trees**. By using **Matplotlib, Pandas, Streamlit, Sci-kit Learn, Numpy, and Seaborn**, this app allows you to:
    - Upload a dataset, then view and filter data within the dataset.
    - Apply Machine Learning techniques such as Linear Regression, K-Nearest Neighbors, and Decision Trees to the dataset.
    - Compare model accuracy on scaled vs. unscaled data.

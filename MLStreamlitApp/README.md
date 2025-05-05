@@ -8,8 +8,8 @@ This project is an interactive Machine Learning App that enables users to upload
 #### Running the App Locally
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/jmikovits/ml-app-project.git
-   cd ml-app-project
+   git clone https://github.com/jmikovits/MLStreamlitApp.git
+   cd ML-App.py
 2. **Install Required Libraries:**
    ```bash
    pip install -r requirements.txt

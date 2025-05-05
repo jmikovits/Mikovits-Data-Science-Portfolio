@@ -1,4 +1,4 @@
-### ML App Project Repository
+### ML App Project
 
 ### Project Overview
 This project is an interactive Machine Learning App that enables users to upload their own datasets and explore various supervised learning models. The app supports multiple regression and classification techniques, including Linear Regression, K-Nearest Neighbors, and Decision Trees. Users can view dataset summaries, adjust hyperparameters interactively, and receive detailed evaluation metrics (e.g., R², MSE, RMSE for regression and accuracy, confusion matrix, ROC curve, and AUC for classification). The goal of the project is to make it easy for users to experiment with machine learning concepts, analyze model outputs, and gain insights into data through interactive visualizations.
@@ -8,7 +8,7 @@ This project is an interactive Machine Learning App that enables users to upload
 #### Running the App Locally
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/ml-app-project.git
+   git clone https://github.com/jmikovits/ml-app-project.git
    cd ml-app-project
 2. **Install Required Libraries:**
    ```bash

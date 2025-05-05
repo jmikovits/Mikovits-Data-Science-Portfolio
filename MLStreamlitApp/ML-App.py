@@ -96,22 +96,17 @@ if options == "Welcome":
 # Make sure to go through the process of cleaning and processing your dataset before applying machine learning techniques to it!
 
 def universal_preprocess(df):
-    # This function drops rows where a specific column has missing values, fills missing numeric values with the median, and encodes categorical variables using pd.get_dummies (with drop_first=True).
+    # This function encodes categorical variables using pd.get_dummies (with drop_first=True).
     # Create a copy so as not to modify the original dataframe.
-    processed_df = df.copy()
-
-    # Fill missing numeric values with the median.
-    # Identify numeric columns.
-    numeric_cols = processed_df.select_dtypes(include=['int64', 'float64']).columns
-    for col in numeric_cols:
-        processed_df[col].fillna(processed_df[col].median(), inplace=True)
+    encoded_df = df.copy()
     
-    # Encode categorical columns using get_dummies (only if they exist).
-    categorical_cols = processed_df.select_dtypes(include=['object', 'category']).columns.tolist()
+    # Encode categorical columns using get_dummies.
+    categorical_cols = encoded_df.select_dtypes(include=['object', 'category']).columns.tolist()
     if categorical_cols:
-        processed_df = pd.get_dummies(processed_df, columns=categorical_cols, drop_first=True)
+        # Trying to make sure the columns are not removed by encoding
+        encoded_df = pd.get_dummies(encoded_df, columns=categorical_cols, drop_first=True, dummy_na=True)
     
-    return processed_df
+    return encoded_df
 
 # Time to create scaled and non-scaled datasets! This helps with the machine learning algorithms later on (working with different data types and various data sets).
 # Function to drop non-numeric columns.
@@ -129,8 +124,8 @@ def scale_numeric_columns(df):
     return df_scaled
 
 # Process the dataset.
-processed_df = universal_preprocess(df)
-numeric_df = drop_non_numeric_columns(processed_df)
+encoded_df = universal_preprocess(df)
+numeric_df = drop_non_numeric_columns(df)
 scaled_df = scale_numeric_columns(numeric_df)
 # So now our uploaded data should be good to go, and the option to use sclaed or unscaled data now exists.
 # -----------------------------------------------
@@ -186,18 +181,6 @@ def universal_linear_regression(X_train, X_test, y_train, y_test):
     metrics = {"R^2": r2, "MSE": mse, "RMSE": rmse}
     return model, metrics
 
-# Function to drop rows containing string values in either X or y
-def drop_rows_with_strings(X, y):
-    combined = pd.concat([X, y], axis=1)
-    # Identify rows where any cell is a string
-    mask = combined.applymap(lambda x: isinstance(x, str))
-    # Drop rows with any string value
-    combined_clean = combined[~mask.any(axis=1)]
-    # Split back into X and y
-    X_clean = combined_clean[X.columns]
-    y_clean = combined_clean[y.name]
-    return X_clean, y_clean
-
 if options == "Linear Regression":
     st.header("Linear Regression")
     st.markdown("Select a target variable (should be continuous) and one predictor variable for linear regression.")
@@ -225,14 +208,6 @@ if options == "Linear Regression":
         # Use double brackets to ensure X is a DataFrame even for a single column.
         X = current_df[[feature]]
         y = current_df[target]
-        
-        # Drop rows where any value in X or y is a string.
-        X, y = drop_rows_with_strings(X, y)
-        
-        # Check if any rows remain after dropping rows with string values.
-        if X.shape[0] == 0:
-            st.error("After dropping rows with string values, no data remain. Please check the selected columns or adjust your dataset.")
-            st.stop()
 
         # Split the data into training and testing sets.
         # I am using the normal 80-20 split and the common random state 42.
@@ -334,11 +309,11 @@ if options == "Decision Tree":
     st.markdown("Select a target variable (should be categorical/binary) and a predictor variable for Decision Tree classification. Adjust the model parameters as needed.")
     
     # Using non-scaled data for this technique!
-    data_version = st.selectbox("Select Data Version", ["Non-scaled Data"], index=0)
+    data_version = st.selectbox("Select Data Version", ["Non-scaled Data", "Scaled Data"], index=0)
     if data_version == "Non-scaled Data":
-        current_df = numeric_df
+        current_df = df
     else:
-        current_df = numeric_df
+        current_df = df
 
     # Let the user choose a target variable.
     all_columns = current_df.columns.tolist()
@@ -362,28 +337,6 @@ if options == "Decision Tree":
         if isinstance(X, pd.Series):
             X = X.to_frame()
     
-        # Drop rows where any value in X or y is a string.
-        def drop_rows_with_strings(X, y):
-            combined = pd.concat([X, y], axis=1)
-    
-            # Identify rows where any cell is a string.
-            mask = combined.applymap(lambda x: isinstance(x, str))
-    
-            # Drop rows with any string value.
-            combined_clean = combined[~mask.any(axis=1)]
-    
-            # Split back into X and y.
-            X_clean = combined_clean[X.columns]
-            y_clean = combined_clean[y.name]
-            return X_clean, y_clean
-    
-        X, y = drop_rows_with_strings(X, y)
-        
-        # Check if any rows remain after dropping rows with string values.
-        if X.shape[0] == 0:
-            st.error("After dropping rows with string values, no data remain. Please check the selected columns or adjust your dataset.")
-            st.stop()
-    
         # Split data into training and testing sets.
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
         
@@ -394,7 +347,8 @@ if options == "Decision Tree":
     
         # For ROC and AUC, we need predicted probabilities for the positive class.
         if hasattr(dt_classifier, "predict_proba"):
-            y_prob = dt_classifier.predict_proba(X_test)[:, 1]
+        # get an (n_samples × n_classes) matrix
+            y_prob = dt_classifier.predict_proba(X_test)
         else:
             y_prob = None
         
@@ -416,9 +370,16 @@ if options == "Decision Tree":
         st.write("Accuracy:", accuracy)
         
         # Convert the confusion matrix into a DataFrame with labels for better display.
-        labels = sorted(np.unique(y_test))
-        cm_df = pd.DataFrame(conf_matrix, index=[f"Actual {l}" for l in labels],
-                              columns=[f"Predicted {l}" for l in labels])
+        # Get every class that appears in *either* y_test or y_pred
+        labels = sorted(np.unique(np.concatenate([y_test, y_pred])))
+
+        # Build the matrix with those labels
+        conf_matrix = confusion_matrix(y_test, y_pred, labels=labels)
+
+        # Wrap it in a DataFrame so the index/columns now match the matrix shape
+        cm_df = pd.DataFrame(conf_matrix,
+                     index=[f"Actual {l}"    for l in labels],
+                     columns=[f"Predicted {l}" for l in labels])
         st.write("Confusion Matrix:")
         st.dataframe(cm_df)
         

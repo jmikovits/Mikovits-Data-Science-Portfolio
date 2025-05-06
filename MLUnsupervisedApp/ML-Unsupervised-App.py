@@ -37,7 +37,7 @@ if uploaded_file is None:
     try:
         df = pd.read_csv("penguins.csv")
     except Exception:
-        df = pd.read_csv("https://raw.githubusercontent.com/jmikovits/MLUnsupervisedApp/main/penguins.csv")
+        df = pd.read_csv("https://raw.githubusercontent.com/jmikovits/Mikovits-Data-Science-Portfolio/blob/main/MLUnsupervisedApp/penguins.csv")
     df.dropna(inplace=True)  # Drop missing values to simplify unsupervised learning
     default_data_used = True
 else:

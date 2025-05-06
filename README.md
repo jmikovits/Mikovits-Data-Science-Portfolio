@@ -39,7 +39,7 @@ This portfolio is going to be organized into the folders based on their category
       ![image](https://github.com/user-attachments/assets/c5321544-616e-4894-9227-2319b97c3c7a)
    ---
 
-5. **Machine Learning Streamlit App**
+4. **Machine Learning Streamlit App**
      [[Link to ML-App Repository](https://github.com/jmikovits/Mikovits-Data-Science-Portfolio/tree/main/MLStreamlitApp)]
    #### Overview
    In this project, I created a Streamlit App that allows users to upload a dataset of their choice and experiment with different machine learning techniques. The machine learning techniques included in this app are **Linear Regression**, **K-Nearest Neighbors**, and **Decision Trees**. By using **Matplotlib, Pandas, Streamlit, scikit-learn, Numpy, and Seaborn**, this app allows you to:
@@ -53,4 +53,20 @@ This portfolio is going to be organized into the folders based on their category
    #### Example Screenshot
    **K-Nearest Neighbors Visualization:**  
     ![KNN Output Screenshot](https://github.com/user-attachments/assets/223b822c-8c27-4546-bd93-acb9683591c9)
+    ---
+
+5. **Unsupervised Machine Learning Streamlit App**
+     [[Link to ML-Unsupervised-App Repository](https://github.com/jmikovits/Mikovits-Data-Science-Portfolio/tree/main/MLUnsupervisedApp)]
+   #### Overview
+   In this project, I developed an interactive Streamlit application that enables users to explore unsupervised machine learning using either the built-in Palmer’s Penguins dataset or their own uploaded data. The app features three key techniques: **Principal Component Analysis (PCA), KMeans Clustering, and Hierarchical Clustering**. Built with **Streamlit, scikit-learn, Pandas, NumPy, Seaborn, Matplotlib, and SciPy**, the app offers an intuitive interface where users can:
+   - Use the Palmer's penguins dataset or upload a dataset, then view and filter data within the dataset.
+   - Apply Unsupervised Machine Learning techniques such as **Principal Component Analysis (PCA)**, **KMeans Clustering**, and **Hierarchical Clustering** to the dataset.
+   - Compare model outputs and accuracy on scaled vs. unscaled data.
+   - View performance feedback such as elbow plots, dendrogram, scatterplots, and silhouette scores.
+   - Add your feedback so I can improve this app in the future!
+   #### Project Significance
+   This project explores unsupervised machine learning through an interactive Streamlit app featuring **PCA**, **KMeans**, and **Hierarchical Clustering**. It allows users to upload datasets, tune parameters, and visualize model results in real time. The app highlights my ability to combine machine learning with thoughtful UI design, making complex techniques both functional and intuitive. By making these techniques approachable and hands-on, the app serves as both an educational tool and a demonstration of end-to-end data science capability.
+   #### Example Screenshot
+   **PCA Combined Variance Explained Visualization:**  
+    ![PCA Combined Variance Explained Plot Screenshot](https://github.com/user-attachments/assets/103e882c-5b22-421d-9ade-9a5cac15ca43)
 

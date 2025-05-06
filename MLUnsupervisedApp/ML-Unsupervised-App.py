@@ -37,8 +37,7 @@ if uploaded_file is None:
     try:
         df = pd.read_csv("penguins.csv")
     except Exception:
-        df = pd.read_csv("https://raw.githubusercontent.com/mwaskom/seaborn-data/master/penguins.csv")
-    st.warning("Default dataset loaded from web because local file was not found.")
+        df = pd.read_csv("https://github.com/jmikovits/Mikovits-Data-Science-Portfolio/blob/main/MLUnsupervisedApp/penguins.csv")
     df.dropna(inplace=True)  # Drop missing values to simplify unsupervised learning
     default_data_used = True
 else:

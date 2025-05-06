@@ -7,12 +7,12 @@ Welcome to my Data Science Portfolio showcasing data science projects and skills
 
 This portfolio is going to be organized into the folders based on their category. For example:
 
-1. **Weekly In-Class Coding Work**  
+1. **Weekly In-Class Coding Work** [[Link to Folder](https://github.com/jmikovits/Mikovits-Data-Science-Portfolio/tree/main/In-Class%20Coding%20Work)]  
    A collection of notebooks showcasing various topics I've learned and applied in my Data Science class, with demonstrated mastery through the completed projects. The projects discussed below demonstrate my mastery and application of the course material to different datasets.
 
    ---
    
-2. **Basic Streamlit App**  
+2. **Basic Streamlit App** [[Link to Basic Streamlit App Repository](https://github.com/jmikovits/Mikovits-Data-Science-Portfolio/tree/main/basic-streamlit-app)]
      #### Overview
      In this project, I created a basic Streamlit app that performs some **Exploratory Data Analysis** on the Palmer's Penguins dataset. The app allows users to filter and visualize data about different penguin species, providing insights into their characteristics like flipper length.
      #### Project Significance
@@ -24,7 +24,7 @@ This portfolio is going to be organized into the folders based on their category
    ---
    
 3. **Tidy Data Project**
-      [[Link to Tidy Data Repository](https://github.com/jmikovits/Mikovits-Data-Science-Portfolio/blob/main/TidyData-Project/TidyData_Project.ipynb)]
+      [[Link to Tidy Data Repository](https://github.com/jmikovits/Mikovits-Data-Science-Portfolio/tree/main/TidyData-Project)]
    #### Overview
    In this project, I focused on the concept of **tidy data**, a core technique in data science that enhances the organization and analysis of datasets. I applied the principles of **tidy data** as outlined by Hadley Wickham to clean and restructure a messy dataset. By     utilizing **Python** and **Pandas**, I performed key data wrangling tasks such as:
    - Handling missing values

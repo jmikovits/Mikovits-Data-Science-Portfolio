@@ -34,7 +34,11 @@ uploaded_file = st.sidebar.file_uploader("Upload file", type=["csv", "xlsx"])
 # Load a tidy and preprocessed default dataset if no file is uploaded
 if uploaded_file is None:
     st.sidebar.info("No file uploaded. Using default Palmer's Penguins dataset!")
-    df = pd.read_csv("https://github.com/jmikovits/Mikovits-Data-Science-Portfolio/blob/main/MLUnsupervisedApp/penguins.csv")
+    try:
+        df = pd.read_csv("penguins.csv")
+    except Exception:
+        df = pd.read_csv("https://raw.githubusercontent.com/mwaskom/seaborn-data/master/penguins.csv")
+    st.warning("Default dataset loaded from web because local file was not found.")
     df.dropna(inplace=True)  # Drop missing values to simplify unsupervised learning
     default_data_used = True
 else:
